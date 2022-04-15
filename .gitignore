@@ -1,0 +1,8 @@
+__pycache__/
+.vscode/
+.env
+valorant-ingame-twitch-chat.toml
+dist/
+build/
+valorant-ingame-twitch-chat.egg-info/
+valorant-ingame-twitch-chat/__pycache__
