@@ -87,6 +87,7 @@ class Endpoints:
         sock.send(f"NICK {nickname}\n".encode('utf-8'))
         sock.send(f"JOIN {channel}\n".encode('utf-8'))
 
+        print("Twitch chat for Valorant is running...")
         while True:
             resp = sock.recv(2048).decode('utf-8')
             callback(resp)

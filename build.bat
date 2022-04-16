@@ -32,5 +32,5 @@ if '%errorlevel%' NEQ '0' (
 	python -m pip install --upgrade pip
 	python -m pip install -r requirements.txt --no-cache
 	python -m pip install pyinstaller
-	python -m PyInstaller main.py --noconfirm --name="valorant-ingame-twitch-chat" --onefile 
+	python -m PyInstaller main.py --noconfirm --icon=favicon.ico --name="valorant-ingame-twitch-chat" --onefile 
 	pause
