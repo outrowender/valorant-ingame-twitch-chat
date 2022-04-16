@@ -9,3 +9,5 @@ valorant-ingame-twitch-chat.toml
 valorant-ingame-twitch-chat.egg-info/
 valorant-ingame-twitch-chat/__pycache__
 valorant-ingame-twitch-chat.spec
+twitch-channel.txt
+twitch-token.txt

@@ -4,11 +4,15 @@ A script who connects your Twitch chat to game party chat!
 
 Console:
 
-<img src="docs/ingame-chat-running.png">
+<img src="docs/ingame-chat-running.png" width="450">
+
+Chat:
+
+<img src="docs/twitch-chat-example.jpg" width="450">
 
 Game:
 
-<img src="docs/ingame-chat-example.png">
+<img src="docs/ingame-chat-example.png" width="450">
 
 ## Why?
 Sometimes what you need is just a small lightweight Twitch chat running inside your game for your cheap PC while you do a stream for your frieds.
@@ -26,18 +30,17 @@ Sometimes what you need is just a small lightweight Twitch chat running inside y
 
 1. [Download](https://github.com/outrowender/valorant-ingame-twitch-chat/releases) latest `valorant-ingame-twitch-chat.zip` from [releases](https://github.com/outrowender/valorant-ingame-twitch-chat/releases) page;
 2. Unzip it on any folder from your PC;
-3. Go to [twitchapps.com/tmi](https://twitchapps.com/tmi/) to get your Twitch API token;
-4. Paste your API token inside `twitch-token.txt` in a single line, replacing anything there;
-5. Open `twitch-channel.txt` and put your channel's name in a single line;
-6. Open Valorant (it's important that you need to open the game BEFORE running the script);
-7. Open `valorant-ingame-twitch-chat.exe` and let it run in background;
-8. Your chat is now running inside the game;
-9. Enjoy.
+3. Open `twitch-channel.txt` and put your channel's name in a single line;
+4. Open Valorant (it's important that you need to open the game BEFORE running the script);
+5. Open `valorant-ingame-twitch-chat.exe` and let it run in background;
+6. Your chat is now running inside the game;
+7. Enjoy.
 
 ## Roadmap
 - ✅ chat fully working in-game;
+- ✅ better emoji support;
 - 🔳 better chat formatting;
-- 🔳 better emote support;
+- 🔳 integration with donations or chat points;
 ## Disclaimer
 
 If you think this is interesting, please, leave a star!
