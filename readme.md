@@ -1,6 +1,6 @@
 # valorant-ingame-twitch-chat.py
 
-A script who shows your Twitch chat in your game system chat!
+A script who shows your Twitch chat, private in your party chat!
 
 Console:
 
