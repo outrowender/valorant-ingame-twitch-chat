@@ -1,6 +1,6 @@
 # valorant-ingame-twitch-chat.py
 
-A script who connects your Twitch chat to game party chat!
+A script who shows your Twitch chat in your game system chat!
 
 Console:
 
@@ -14,6 +14,9 @@ Game:
 Sometimes what you need is just a small lightweight Twitch chat running inside your game for your cheap PC while you do a stream for your frieds.
 
 ## Q&A
+### Everyone in my party will see my chat?
+> No! Only you will see Twitch chat!
+
 ### I'll get a ban using this?
 > No! This script uses [Valorant](https://github.com/techchrism/valorant-api-docs) and [Twitch.tv](https://dev.twitch.tv/docs/irc#getting-started-with-chat--chatbots) APIs, so theoricaly will not get you a ban.
 
