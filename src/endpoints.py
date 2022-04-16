@@ -1,8 +1,9 @@
 import requests
-from exceptions import ValorantAPIError
-from auth import Auth
 import urllib3
 import socket
+from .exceptions import ValorantAPIError
+from .auth import Auth
+from .config import Config
 
 
 class Endpoints:
@@ -70,16 +71,19 @@ class Endpoints:
 
     def startTwitchChat(self, callback):
 
+        config = Config()
+        channelConfig = config.getChannel()
+        tokenConfig = config.getToken()
+
         server = 'irc.chat.twitch.tv'
         port = 6667
-        nickname = 'outrowender'
-        token = 'oauth:u34ikeodfdhuiugs89sg94u0mzoh2l'
-        channel = '#coreano'
+        nickname = channelConfig
+        channel = '#'+channelConfig
 
         sock = socket.socket()
 
         sock.connect((server, port))
-        sock.send(f"PASS {token}\n".encode('utf-8'))
+        sock.send(f"PASS {tokenConfig}\n".encode('utf-8'))
         sock.send(f"NICK {nickname}\n".encode('utf-8'))
         sock.send(f"JOIN {channel}\n".encode('utf-8'))
 

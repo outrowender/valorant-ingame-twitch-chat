@@ -1,8 +1,8 @@
-from program import start
-from helpers import colored
+from src.startup import Startup
+from src.helpers import colored
 
 try:
-    start()
+    Startup.run()
 except Exception as e:
     # print(e) # remove for prod
     message = type(e).__name__ + ": "+e.args[0]

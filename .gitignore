@@ -1,8 +1,10 @@
 __pycache__/
 .vscode/
 .env
-valorant-ingame-twitch-chat.toml
 dist/
 build/
+output/
+src/__pycache__/
+valorant-ingame-twitch-chat.toml
 valorant-ingame-twitch-chat.egg-info/
 valorant-ingame-twitch-chat/__pycache__

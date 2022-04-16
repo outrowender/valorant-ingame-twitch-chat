@@ -1,6 +1,6 @@
 import os
 import base64
-from exceptions import LockfileError
+from .exceptions import LockfileError
 
 
 class Auth:
