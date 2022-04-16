@@ -4,6 +4,7 @@ import socket
 from .exceptions import ValorantAPIError
 from .auth import Auth
 from .config import Config
+from .helpers import generateRandomNumbers
 
 
 class Endpoints:
@@ -77,8 +78,10 @@ class Endpoints:
 
         server = 'irc.chat.twitch.tv'
         port = 6667
-        nickname = channelConfig
+        nickname = 'justinfan'+generateRandomNumbers()
         channel = '#'+channelConfig
+
+        print(f'Joining "{channelConfig}" chat as "{nickname}"...')
 
         sock = socket.socket()
 

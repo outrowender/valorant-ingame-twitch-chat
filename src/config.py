@@ -14,4 +14,5 @@ class Config:
             with open("./twitch-token.txt") as token:
                 return token.read()
         except:
-            raise TokenFileError("twitch-token.txt not found")
+            return "BLANK"
+            #raise TokenFileError("twitch-token.txt not found")
