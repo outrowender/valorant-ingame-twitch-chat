@@ -6,6 +6,10 @@ from .auth import Auth
 from .config import Config
 from .helpers import generateRandomNumbers
 
+import pytchat as yt
+with open("yt.txt", encoding="utf-8") as f:
+    for line in f:
+        ID=line
 
 class Endpoints:
 
@@ -94,3 +98,13 @@ class Endpoints:
         while True:
             resp = sock.recv(2048).decode('utf-8')
             callback(resp)
+            
+            
+            
+    def startYoutubechat(self,callback):
+        chat=yt.create(video_id=ID)
+        while chat.is_alive():
+            for c in chat.get().sync_items():
+                live=(f"{c.author.name}: {c.message}")
+                #print("Youtube chat for valorant is running....")
+                callback(live)
