@@ -3,7 +3,7 @@ import urllib3
 import socket
 from .exceptions import ValorantAPIError
 from .auth import Auth
-from .config import Config,videoID
+from .config import Config
 from .helpers import generateRandomNumbers
 from emoji import demojize
 
@@ -101,7 +101,8 @@ class Endpoints:
             
             
     def startYoutubechat(self,callback):
-        chat=yt.create(video_id=videoID())
+        config = Config()
+        chat=yt.create(video_id=config.videoID())
         while chat.is_alive():
             for c in chat.get().sync_items():
                 live=(f"{c.author.name}: {c.message}")
