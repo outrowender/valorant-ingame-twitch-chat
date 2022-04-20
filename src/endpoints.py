@@ -5,6 +5,9 @@ from .exceptions import ValorantAPIError
 from .auth import Auth
 from .config import Config
 from .helpers import generateRandomNumbers
+from emoji import demojize
+
+import pytchat as yt
 
 
 class Endpoints:
@@ -94,3 +97,14 @@ class Endpoints:
         while True:
             resp = sock.recv(2048).decode('utf-8')
             callback(resp)
+            
+            
+            
+    def startYoutubechat(self,callback):
+        config = Config()
+        chat=yt.create(video_id=config.videoID())
+        while chat.is_alive():
+            for c in chat.get().sync_items():
+                live=(f"{c.author.name}: {c.message}")
+                #print("Youtube chat for valorant is running....")
+                callback(live)

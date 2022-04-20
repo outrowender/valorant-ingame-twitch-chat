@@ -1,5 +1,5 @@
 from src.startup import Startup
-
+print("Starting up...")
 try:
     Startup.run()
 except Exception as e:

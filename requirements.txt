@@ -2,3 +2,5 @@ requests==2.27.1
 setuptools==39.0.1
 urllib3==1.26.9
 emoji==1.7.0
+pytchat==0.5.5
+scrapetube==2.2.2
