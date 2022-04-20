@@ -3,13 +3,12 @@ import urllib3
 import socket
 from .exceptions import ValorantAPIError
 from .auth import Auth
-from .config import Config
+from .config import Config,videoID
 from .helpers import generateRandomNumbers
+from emoji import demojize
 
 import pytchat as yt
-with open("yt.txt", encoding="utf-8") as f:
-    for line in f:
-        ID=line
+
 
 class Endpoints:
 
@@ -102,7 +101,7 @@ class Endpoints:
             
             
     def startYoutubechat(self,callback):
-        chat=yt.create(video_id=ID)
+        chat=yt.create(video_id=videoID())
         while chat.is_alive():
             for c in chat.get().sync_items():
                 live=(f"{c.author.name}: {c.message}")
