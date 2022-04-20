@@ -18,15 +18,14 @@ class Config:
             return "BLANK"
             #raise TokenFileError("twitch-token.txt not found")
             
-    
+    def videoID(self):
+        with open("yt.txt", encoding="utf-8") as f:
+            for line in f:
+                channel=line
+                videos=scrapetube.get_channel(channel)
+                for vidoe in videos:
+                    ID=(vidoe["videoId"])
+                    break
+                return ID
 
 
-def videoID():
-    with open("yt.txt", encoding="utf-8") as f:
-        for line in f:
-            channel=line
-            videos=scrapetube.get_channel(channel)
-            for vidoe in videos:
-                ID=(vidoe["videoId"])
-                break
-            return ID
